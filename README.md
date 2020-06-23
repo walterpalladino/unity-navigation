@@ -2,4 +2,4 @@
 
 1. Standard Navigation
 2. NavmeshSurface Navigation
-3. Offlinks
+3. OffMeshLinks
