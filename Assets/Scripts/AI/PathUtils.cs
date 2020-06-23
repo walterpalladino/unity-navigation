@@ -110,4 +110,28 @@ public class PathUtils {
         return distance;
     }
 
+
+    /*
+    public static bool CheckOnMesLink(NavMeshAgent agent, out NavMeshLink link, out OffMeshLinkData data)
+    {
+
+        link = null;
+        data = null;
+
+        if (agent.isOnOffMeshLink)
+        {
+            link = agent.navMeshOwner as NavMeshLink;
+            if (link != null)
+            {
+                return true;
+            }
+            data = agent.currentOffMeshLinkData;
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    */
 }
