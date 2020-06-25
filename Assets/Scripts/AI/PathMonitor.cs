@@ -12,6 +12,11 @@ public class PathMonitor : MonoBehaviour
     public NavMeshLink link;
     public OffMeshLinkData data;
 
+    public bool hasPathPending = false;
+    public bool destinationReached = false;
+
+
+
     private NavMeshAgent _navMeshAgent;
 
 
@@ -44,5 +49,7 @@ public class PathMonitor : MonoBehaviour
             isOnLink = false;
             link = null;
         }
+        hasPathPending = _navMeshAgent.pathPending;
+        destinationReached = PathUtils.DestinationReached(_navMeshAgent, transform.position);
     }
 }
